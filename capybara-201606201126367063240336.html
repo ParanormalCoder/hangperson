@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/default.css" type="text/css">
+    <title>Hangperson</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="span-24">
+        <p>Play Hangperson!</p>
+      </div>
+      <div class="span-24">
+        <h2>Guess a letter</h2>
+
+foobar
+
+<p>
+  Wrong Guesses:
+  <span class="guesses"></span>
+</p>
+
+<p>
+  Word so far:
+  <span class="word">----a-</span>
+</p>
+
+<form action="/guess" method="post">
+  <input type="text" size="1" name="guess" autocomplete="off"/>
+  <input type="submit" value="Guess!"/>
+</form>
+
+<!-- This form is incomplete--it needs a destination URL as well as a method: -->
+<form method="post" action="/create">
+  <input type="submit" value="New Game"/>
+</form>
+
+
+      </div>
+      <div id="footer" class="span-24">
+        <p>Random word generator provided by Watchout4snakes.com -- thanks!</p>
+      </div>
+    </div>
+  </body>
+</html>
